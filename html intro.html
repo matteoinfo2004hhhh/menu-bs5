@@ -1,0 +1,341 @@
+
+<html>
+    
+<title>Indtroduzione html da Matteo Barcellona</title>
+<body>
+    
+<style>
+ body {
+  background-image: url("html5-web-applications.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+ }
+
+
+
+
+div{
+width: 1000px;
+height: 200px;
+border: solid black 2px;
+background-color:gold;
+border-radius: 5px;
+text-align:center;   
+margin: 20px auto;
+}
+
+.div2{
+width:500px;
+height: 70px;
+border: solid black 6px;
+background-color:lime;
+border-radius: 5px;
+}
+
+.div3{
+width:400px;
+height:900px;
+border: solid black 2px;
+background-color:aqua;
+border-radius: 5px;
+float: right;
+}
+
+.div4{
+width:400px;
+height:900px;
+border: solid rgb(0, 0, 0) 2px;
+background-color:aqua;
+border-radius: 5px;
+float: left;
+}
+
+.divg{
+width: 800px;
+height: 600px;
+border: solid black 10px;
+background-color:rgb(224, 218, 218);
+border-radius: 5px;
+text-align:center;   
+margin: 20px auto;
+}
+
+.divs{
+width: 300px;
+height: 140px;
+border: solid black 2px;
+background-color:rgb(224, 223, 218);
+border-radius: 5px;
+text-align:center;   
+margin: 20px auto;
+}
+</style>
+
+<h1 style="color: rgb(255, 80, 80);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center;">HTML</h1>
+
+<div class="div">
+    <h2 style="color: rgb(0, 0, 2);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center;">In questo sito vedremo gli esercizi come sono fatti su HTML come sono 
+      programmati e come scrivere il testo e il titolo e svillupare un sito web.Poi potremo sapere come si fanno gli esercizi su HTML e come programmarli in 5 minuti 
+      consecutivi,e come si fa a mettere gli immagini nel sito.In questo dito c è il menu degli esrcizi svolti durante la lezione basta che clicchi il menu nella scatola vrrde e vedi gli tutti esercizi
+    stati svolti</h2>
+</div>
+
+
+
+
+
+<h3 style="color: rgb(92, 14, 236);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center;">ESEMPI DEGLI ESECIZI</h3>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f00;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 40px;
+  nav-down: 60px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 500px) {
+  .overlay a {font-size: 40px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  nav-down: 60px;
+  }
+}
+
+
+
+
+.myButton {
+	box-shadow: 0px 1px 10px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:16px;
+	border:7px solid #b38207;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Courier New;
+	font-size:23px;
+	font-weight:bold;
+	padding:9px 56px;
+	text-decoration:none;
+	text-shadow:1px 0px 50px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.myButton2 {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:15px;
+	border:5px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:16px 56px;
+	text-decoration:none;
+	text-shadow:0px 0px 23px #2f6627;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.myButton3 {
+	box-shadow:inset 0px 1px 31px -50px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:19px;
+	border:5px solid #ff740a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:23px;
+	font-weight:bold;
+	padding:11px 52px;
+	text-decoration:none;
+	text-shadow:0px 1px 27px #8c1a12;
+}
+.myButton3:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton4 {
+	box-shadow:inset 10px 1px 9px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:23px;
+	border:5px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:22px;
+	font-weight:bold;
+	padding:12px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton4:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton4:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+        
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1>HIML</h1>
+  <div class="overlay-content" style="background-color: rgb(255, 105, 5);  height:auto">
+    <h2 style="color: azure;">HTML</h2>
+    <a href="esercizio 1 album di classe div.html">eseerzizio 1(rifare il codice)</a>
+    <a href="sito.html">eseerzizio 2(Creare pagina html con i tuoi dati anagrafici.)</a>
+    <a href="esercizio 3 card.html">eseerzizio 3(Realizzare CARD)</a>
+    <a href="esercizio 4 sistemi operativi.html">eserzizio 4(sistemi operativi di Prof Paiola)</a>
+    <a href="esercizio 5 flip card.html">eserzizio 5(Realizzare Card con il seguente codice)</a>
+    <a href="5 bottoni.html">eserzizio 6(Pagina bottoni)</a>
+    <a href="Creare 10 box con le seguenti caratteristiche.html">eserzizio 7 verifica di laboratorio di TPSIT(Creare 10 box con le seguenti caratteristiche (simulazione lab)</a>
+    <a href="porte logiche/porte logiche.html">eserzizio 8 (Creare pagina html con 5 bottoni)</a>
+    <a href="cellulare.html">eserzizio 9 (Studiare e realizzare una pagina javascript con due input e calcolo)</a>
+    <a href="menu moltiplicazione.html">eserzizio 10 (Dati 3 input trova il maggiore)</a>
+    <a href="CODICE-2.html">eserzizio 11 (Dati 3 input trova il maggiore)</a>
+    <a href="eserzizio 11.html">eserzizio 13 (crea 4 box con 4 bottoni che cambiano i colori dei div)</a>
+    <a href="conta 6.html">eserzizio 14 (lanciare 1000 volte un dado e contare quanti 6 escono)</a>
+    <a href="ffffffffff.html">eserziio 15 (Creare bottone stilizzato che prende il tempo e modifica sfondo di un bottone)</a>
+    <a href="tempi.html">eserzizio 16 (Dato il codice sui tempi stampare tutti i tempi ogni volta che premo i bottoni)</a>
+    <a href="gg.html">eserzizio 17 (Array tempi click esercizio 1)</a>
+    <a href="box.html">eserzizio 18 (gioco misura i tempi di reazioni se esce il colore verde)</a>
+    <a href="media.html">eserzizio 19 (Media elementi di un vettore.)</a>
+    <a href="eserzizio ultimo.html">eserzizio 20 (Dato il codice sotto trovare la media degli elementi dell'array e il massimo elemento dei primi 50 elementi di un array di 100 elementi.)</a>
+  </div>
+</div>
+
+<h2 style="text-align: center;color: rgb(134, 123, 17);">Clicca il menu per vdere gli esempi degli esercizi stati svolti</h2>
+<div class="div2">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Apri il menu su HTML</span>
+</div>
+
+<div class="divg">
+<h2 style="color: #f00;">Descrizione</h2>
+<P>Questi sono gli esercizi che abbbiamo svolto durante la lezione di tpsit per vederli premmere il menu
+   sopra che e dentro la box lime,qui ci sono gli esercizi e gli argomenti che abbiamo notato e gli stile con css e javascript che sono le funzioni che servono per fare il random cioè
+  lanciare il numero casuale e dopo gli arrey con dimensione del numero e tempi deli click del bottone e box cambiano colori casuali. </P>
+  <h3>ARGOMENTI TRATATI A LEZIONE</h3>
+  <div class="divs">
+  <ul>
+    <li style="color:rgb(228, 99, 13);">HTML</li>
+    <li style="color:rgb(13, 34, 228);">CSS</li>
+    <li style="color:yellow;">javascript</li>
+    <li style="color:lime;">random</li>
+    <li style="color:rgb(0, 247, 255);">buttoni</li>
+  </ul>  
+</div>
+  <h2>PER MAGIOR SUPORTO CONSULTA I MIEI BLOG</h2>
+  <a href="http://matteobarcellona.altervista.org/i-sistemi-operativi/" class="myButton">BLOG 1</a>
+  <a href="http://matteobarcellona.altervista.org/come-fare-la-flip-card/" class="myButton2">BLOG 2</a>
+  <a href="http://matteobarcellona.altervista.org/come-fare-maggiore-e-minore-d-i-3-input-e-moltiplicazione-su-2-input/" class="myButton3">BLOG 3</a>
+  <a href="http://matteobarcellona.altervista.org/come-fare-il-math-random-e-sull-esercizio-click-del-bottone/" class="myButton4">BLOG 4</a>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+</html>

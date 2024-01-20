@@ -1,0 +1,280 @@
+<html>
+<body  onload="cambiacolore()" onload="inizia()">
+    <title>intro javscript</title>
+   <div class="JS" id="JS"><h2 style="text-align: center;">JAVASCRIPT</h2><div class="divj"><img src="jajaja.png" class="card-img-top" width="390px" height="230px"  alt=".."></div>
+</div>
+    <style>
+       
+body{
+background-color: lemonchiffon;    
+}
+
+div{
+background-color: aliceblue;
+height: 400px;
+width: 800px;
+margin: 20px auto;
+}
+.div2{
+height: 500px;
+width: 800px;
+border: black solid 3px;
+margin: -460px auto;
+-webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, inset 5px 5px 48px 49px rgba(0,0,0,0); 
+box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, inset 5px 5px 48px 49px rgba(0,0,0,0);
+}
+.divj{
+background-color: rgb(238, 255, 80);
+height: 230px;
+border: black solid 7px;
+width: 390px;
+text-align: center;
+margin: 10px;
+padding: 2px;
+border-radius: 6px;
+}
+
+.JS{
+background-color: rgb(255, 251, 0);
+height: 350px;
+border: black solid 9px;
+width: 425px;
+float: right;
+margin: 70px;
+padding: 2px;
+border-radius: 12px;
+}
+
+.divg{
+  background-color: rgb(255, 251, 0);
+height: 350px;
+border: black solid 9px;
+width: 425px;
+float: left;
+margin: 61px;
+padding: 2px;
+border-radius: 55px;
+}
+
+
+
+
+
+                                                   
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: black solid 6px;
+}
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: lime;
+}
+.flip-card-back {
+  background-color: #ff8901;
+  color: white;
+  transform: rotateY(180deg);
+  -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset 5px 5px 48px 49px rgba(0,0,0,0); 
+box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, inset 5px 5px 48px 49px rgba(0,0,0,0)
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.2s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f00;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 40px;
+  nav-down: 60px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 500px) {
+  .overlay a {font-size: 40px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  nav-down: 60px;
+  }
+  
+ 
+
+}
+
+.myButton {
+	box-shadow:inset -2px 4px 13px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:27px;
+	border:6px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:21px;
+	font-weight:bold;
+	padding:13px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+</style>
+<div class="divg">
+<h2 style="text-align: center;">ESEcIZI FATTI IN LABORATORIO</h2>
+<h3 style="text-align: center;color: #FF0000;">Con il prof Paiola</h3>
+<h3>Nel MENU cliccato andando sotto il meni con la scritta Lab TPSIT  mostrano gli sercizi fatti nelle ore di laboratorio di TPSIT</h3>
+</div>
+<h1 style="height:50px;color:orange;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center;text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;">JAVASCRIPT</h1>
+<div class="div">
+    <h4> Javascript e un liguaggio di programmazione di alto livello che serve per fare l funzioni e vari oprazioni di calcoli come somma divisione molriplicazione 
+        .E random che genera numeri casuali e altre funzioni come prendi il tempo ho altra funzione onclick del bottone.Qui potremo sapere che javascript permette di migliorare il sito
+        e di creare l funzioni come i bottoni con onclick.per consutare gli esercizi andare sulla flip card  cliccare il menu.   
+        </h4>
+
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="67-678384_transparent-javascript-icon-png-png-download.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h2 style="color: yellow;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">JAVASCRIPT</h2>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Apri il menu su HTML</span>
+      </div>
+    </div>
+  </div>
+
+<div class="div2">
+   
+        
+
+
+</div>
+
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content" style="background-color: rgb(247, 222, 1);  height:auto">
+      <h2>JAVASCRIPT</h2>
+      <a href="cellulare.html">eserzizio 1 (Studiare e realizzare una pagina javascript con due input e calcolo)</a>
+      <a href="menu moltiplicazione.html">eserzizio 2 (Dati 3 input trova il maggiore)</a>
+      <a href="CODICE-2.html">eserzizio 3 (Dati 3 input trova il maggiore)</a>
+      <a href="eserzizio 11.html">eserzizio 4 (crea 4 box con 4 bottoni che cambiano i colori dei div)</a>
+      <a href="conta 6.html">eserzizio 5 (lanciare 1000 volte un dado e contare quanti 6 escono)</a>
+      <a href="ffffffffff.html">eserziio 6 (Creare bottone stilizzato che prende il tempo e modifica sfondo di un bottone)</a>
+      <a href="tempi.html">eserzizio 7 (Dato il codice sui tempi stampare tutti i tempi ogni volta che premo i bottoni)</a>
+      <a href="gg.html">eserzizio 8 (Array tempi click esercizio 1)</a>
+      <a href="box.html">eserzizio 9 (gioco misura i tempi di reazioni se esce il colore verde)</a>
+      <a href="media.html">eserzizio 10 (Media elementi di un vettore.)</a>
+      <a href="eserzizio ultimo.html">eserzizio 11 (Dato il codice sotto trovare la media degli elementi dell'array e il massimo elemento dei primi 50 elementi di un array di 100 elementi.)</a>
+      <h2>LAB TPSIT</h2>
+      <a href="es 1.html">box movimento</a>
+      <a href="esercizio 2.html">eserzizio 2 (movimento del box casuale.)</a>
+      <a href="div cambia colore cancella.html">div cambia colore</a>
+      <a href="esempio colore box da solo.html">esempi cambia colore da solo</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+         
+
+</body>
+</html>
+
+<script>
+function cambiacolore(){
+var a=document.getElementById("JS");
+setInterval(function(){
+r=parseInt(Math.random()*256);
+i=parseInt(Math.random()*256);
+k=parseInt(Math.random()*256);
+a.style.backgroundColor="rgb("+r+","+i+","+k+")";
+},200);
+}
+</script>
+

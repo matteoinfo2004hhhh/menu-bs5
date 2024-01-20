@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>
+
+
+
+<style>
+
+
+body{background-color:#483d8b;
+
+
+}
+.miaScatola{
+ 
+width:200px;
+height:200px;
+margin:5px;
+padding:5px;
+border:3px solid black;
+
+
+}
+#centrato
+{ text-align:center;
+  color:red;
+  font-family:arial;
+  margin:2px;
+}
+li {font-size:14px}
+
+
+
+
+</style>
+</head>
+
+<body>
+<h1>Sistemi Operativi  </h1> 
+<button type="button" onclick="alert('Hello World!')">Introduzione ai sistemi operativi con Javascript</button>
+
+
+
+
+<p id="demo"></p>
+
+
+<div class="miaScatola">
+<!--inserisco un elenco puntato dei dispositivi di output   -->
+        <p id="centrato"> Dispositivi di output</p>
+<ul>
+  <li style="color:gray;">Cuffie</li>
+  <li style="color:Dodgerblue">CD/DVD</li>
+  <li style="color:yellow">Schermo</li>
+  <li style="color:white">Casse acustiche</li>
+  <li>LCD</li>
+  <li style="color:green">Monitor</li>
+  <li style="color:orange">Plotter</li>
+  <li style="color:pink">Stanpante</li>
+</ul>  
+
+
+</div>
+
+
+
+
+</body>
+</html>
